@@ -190,6 +190,7 @@ def create_label_grocy_1d(text, **kwargs):
 
         text_font_size = 80
         duedate_font_size = 40
+        # Set as user param in Config
         barcode_height = 120
 
         from barcode.codex import Code128
@@ -210,6 +211,7 @@ def create_label_grocy_1d(text, **kwargs):
             margin_top = kwargs["margin_top"]
             margin_bottom = kwargs["margin_bottom"]
             width = kwargs["width"]
+        # Change to rotated
         else:
             margin_left = kwargs["margin_bottom"]
             margin_right = kwargs["margin_top"]
